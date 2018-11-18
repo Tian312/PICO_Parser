@@ -1,0 +1,87 @@
+2018-11-15 21:12:01,043:INFO: Initializing tf session
+2018-11-15 21:12:01,689:INFO: Reloading the latest trained model...
+2018-11-15 21:12:01,691:INFO: Restoring parameters from tian_data_iob/result_for_data/model.weights/
+2018-11-15 21:12:02,782:INFO: Epoch 1 out of 80
+2018-11-15 21:12:41,759:INFO: f1 0.62 - p 0.74 - r 0.53
+2018-11-15 21:12:42,305:INFO: - new best score!
+2018-11-15 21:12:42,305:INFO: Epoch 2 out of 80
+2018-11-15 21:13:19,968:INFO: f1 0.65 - p 0.75 - r 0.57
+2018-11-15 21:13:20,515:INFO: - new best score!
+2018-11-15 21:13:20,515:INFO: Epoch 3 out of 80
+2018-11-15 21:13:58,333:INFO: f1 0.67 - p 0.76 - r 0.59
+2018-11-15 21:13:58,871:INFO: - new best score!
+2018-11-15 21:13:58,871:INFO: Epoch 4 out of 80
+2018-11-15 21:14:36,580:INFO: f1 0.66 - p 0.76 - r 0.59
+2018-11-15 21:14:36,580:INFO: Epoch 5 out of 80
+2018-11-15 21:15:14,347:INFO: f1 0.68 - p 0.77 - r 0.60
+2018-11-15 21:15:14,898:INFO: - new best score!
+2018-11-15 21:15:14,898:INFO: Epoch 6 out of 80
+2018-11-15 21:15:52,641:INFO: f1 0.68 - p 0.78 - r 0.60
+2018-11-15 21:15:52,642:INFO: Epoch 7 out of 80
+2018-11-15 21:16:30,373:INFO: f1 0.69 - p 0.78 - r 0.61
+2018-11-15 21:16:30,911:INFO: - new best score!
+2018-11-15 21:16:30,911:INFO: Epoch 8 out of 80
+2018-11-15 21:17:08,712:INFO: f1 0.69 - p 0.78 - r 0.61
+2018-11-15 21:17:09,256:INFO: - new best score!
+2018-11-15 21:17:09,256:INFO: Epoch 9 out of 80
+2018-11-15 21:17:46,884:INFO: f1 0.69 - p 0.78 - r 0.62
+2018-11-15 21:17:47,420:INFO: - new best score!
+2018-11-15 21:17:47,420:INFO: Epoch 10 out of 80
+2018-11-15 21:18:24,858:INFO: f1 0.69 - p 0.79 - r 0.62
+2018-11-15 21:18:25,406:INFO: - new best score!
+2018-11-15 21:18:25,407:INFO: Epoch 11 out of 80
+2018-11-15 21:19:03,183:INFO: f1 0.69 - p 0.78 - r 0.62
+2018-11-15 21:19:03,184:INFO: Epoch 12 out of 80
+2018-11-15 21:19:41,000:INFO: f1 0.70 - p 0.79 - r 0.63
+2018-11-15 21:19:41,542:INFO: - new best score!
+2018-11-15 21:19:41,543:INFO: Epoch 13 out of 80
+2018-11-15 21:20:19,387:INFO: f1 0.69 - p 0.78 - r 0.62
+2018-11-15 21:20:19,387:INFO: Epoch 14 out of 80
+2018-11-15 21:20:57,158:INFO: f1 0.69 - p 0.78 - r 0.63
+2018-11-15 21:20:57,158:INFO: Epoch 15 out of 80
+2018-11-15 21:21:34,710:INFO: f1 0.68 - p 0.77 - r 0.61
+2018-11-15 21:21:34,710:INFO: - early stopping 3 epochs without improvement
+2018-11-15 21:21:34,710:INFO: B-Participant {'n_correct': 111.0, 'n_pred': 152.0, 'n_true': 168.0}
+2018-11-15 21:21:34,711:INFO: I-Participant {'n_correct': 161.0, 'n_pred': 212.0, 'n_true': 219.0}
+2018-11-15 21:21:34,711:INFO: I-Intervention {'n_correct': 129.0, 'n_pred': 171.0, 'n_true': 390.0}
+2018-11-15 21:21:34,711:INFO: B-modifier {'n_correct': 89.0, 'n_pred': 98.0, 'n_true': 134.0}
+2018-11-15 21:21:34,711:INFO: I-modifier {'n_correct': 0.0, 'n_pred': 3.0, 'n_true': 9.0}
+2018-11-15 21:21:34,711:INFO: B-Intervention {'n_correct': 179.0, 'n_pred': 235.0, 'n_true': 309.0}
+2018-11-15 21:21:34,711:INFO: I-measure {'n_correct': 105.0, 'n_pred': 123.0, 'n_true': 233.0}
+2018-11-15 21:21:34,711:INFO: I-Outcome {'n_correct': 423.0, 'n_pred': 555.0, 'n_true': 545.0}
+2018-11-15 21:21:34,711:INFO: B-measure {'n_correct': 62.0, 'n_pred': 73.0, 'n_true': 128.0}
+2018-11-15 21:21:34,711:INFO: B-Outcome {'n_correct': 270.0, 'n_pred': 352.0, 'n_true': 356.0}
+2018-11-15 21:21:34,711:INFO: p: 0.585820895522388
+2018-11-15 21:21:34,711:INFO: r: 0.5735159817351598
+2018-11-15 21:21:34,711:INFO: f1: 0.5796031379787725
+2018-11-15 21:21:34,711:INFO: B-Participant {'n_correct': 111.0, 'n_pred': 152.0, 'n_true': 168.0}
+2018-11-15 21:21:34,712:INFO: I-Participant {'n_correct': 161.0, 'n_pred': 212.0, 'n_true': 219.0}
+2018-11-15 21:21:34,712:INFO: I-Intervention {'n_correct': 129.0, 'n_pred': 171.0, 'n_true': 390.0}
+2018-11-15 21:21:34,712:INFO: B-modifier {'n_correct': 89.0, 'n_pred': 98.0, 'n_true': 134.0}
+2018-11-15 21:21:34,712:INFO: I-modifier {'n_correct': 0.0, 'n_pred': 3.0, 'n_true': 9.0}
+2018-11-15 21:21:34,712:INFO: B-Intervention {'n_correct': 179.0, 'n_pred': 235.0, 'n_true': 309.0}
+2018-11-15 21:21:34,712:INFO: I-measure {'n_correct': 105.0, 'n_pred': 123.0, 'n_true': 233.0}
+2018-11-15 21:21:34,712:INFO: I-Outcome {'n_correct': 423.0, 'n_pred': 555.0, 'n_true': 545.0}
+2018-11-15 21:21:34,712:INFO: B-measure {'n_correct': 62.0, 'n_pred': 73.0, 'n_true': 128.0}
+2018-11-15 21:21:34,712:INFO: B-Outcome {'n_correct': 270.0, 'n_pred': 352.0, 'n_true': 356.0}
+2018-11-15 21:21:34,712:INFO: p= 0.585820895522388
+2018-11-15 21:21:34,712:INFO: r= 0.5735159817351598
+2018-11-15 21:21:34,712:INFO: f1= 0.5796031379787725
+2018-11-15 21:21:42,050:INFO: Initializing tf session
+2018-11-15 21:21:42,699:INFO: Reloading the latest trained model...
+2018-11-15 21:21:42,701:INFO: Restoring parameters from /home/tk2624/projects/lstm-crf-for-iob/tian_data_iob/result_wpre_set6_clean/model.weights/
+2018-11-15 21:21:42,855:INFO: Testing model over test set
+2018-11-15 21:21:46,166:INFO: B-Participant {'n_correct': 137.0, 'n_pred': 183.0, 'n_true': 187.0}
+2018-11-15 21:21:46,166:INFO: I-Participant {'n_correct': 134.0, 'n_pred': 172.0, 'n_true': 207.0}
+2018-11-15 21:21:46,166:INFO: I-Intervention {'n_correct': 128.0, 'n_pred': 163.0, 'n_true': 271.0}
+2018-11-15 21:21:46,166:INFO: B-modifier {'n_correct': 101.0, 'n_pred': 105.0, 'n_true': 147.0}
+2018-11-15 21:21:46,166:INFO: I-modifier {'n_correct': 0.0, 'n_pred': 0.0, 'n_true': 3.0}
+2018-11-15 21:21:46,167:INFO: B-Intervention {'n_correct': 234.0, 'n_pred': 269.0, 'n_true': 340.0}
+2018-11-15 21:21:46,167:INFO: I-measure {'n_correct': 298.0, 'n_pred': 308.0, 'n_true': 376.0}
+2018-11-15 21:21:46,167:INFO: I-Outcome {'n_correct': 527.0, 'n_pred': 603.0, 'n_true': 681.0}
+2018-11-15 21:21:46,167:INFO: B-measure {'n_correct': 129.0, 'n_pred': 144.0, 'n_true': 166.0}
+2018-11-15 21:21:46,167:INFO: B-Outcome {'n_correct': 293.0, 'n_pred': 362.0, 'n_true': 394.0}
+2018-11-15 21:21:46,167:INFO: p= 0.632
+2018-11-15 21:21:46,167:INFO: r= 0.640194489465154
+2018-11-15 21:21:46,167:INFO: f1= 0.6360708534621579
+2018-11-15 21:21:46,167:INFO: f1 0.78 - p 0.86 - r 0.71

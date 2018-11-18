@@ -1,0 +1,57 @@
+2018-11-14 00:53:44,256:INFO: Initializing tf session
+2018-11-14 00:53:44,932:INFO: Reloading the latest trained model...
+2018-11-14 00:53:44,933:INFO: Restoring parameters from tian_data_span/result_for_data_2/model.weights/
+2018-11-14 00:53:46,262:INFO: Epoch 1 out of 80
+2018-11-14 00:54:24,712:INFO: f1 0.69 - p 0.83 - r 0.58
+2018-11-14 00:54:25,267:INFO: - new best score!
+2018-11-14 00:54:25,267:INFO: Epoch 2 out of 80
+2018-11-14 00:55:01,519:INFO: f1 0.70 - p 0.81 - r 0.62
+2018-11-14 00:55:02,025:INFO: - new best score!
+2018-11-14 00:55:02,026:INFO: Epoch 3 out of 80
+2018-11-14 00:55:38,260:INFO: f1 0.68 - p 0.83 - r 0.58
+2018-11-14 00:55:38,261:INFO: Epoch 4 out of 80
+2018-11-14 00:56:14,620:INFO: f1 0.70 - p 0.82 - r 0.61
+2018-11-14 00:56:14,621:INFO: Epoch 5 out of 80
+2018-11-14 00:56:51,663:INFO: f1 0.70 - p 0.82 - r 0.61
+2018-11-14 00:56:51,664:INFO: - early stopping 3 epochs without improvement
+2018-11-14 00:56:51,664:INFO: Outcome {'n_correct': 659.0, 'n_pred': 793.0, 'n_true': 901.0}
+2018-11-14 00:56:51,664:INFO: Intervention {'n_correct': 319.0, 'n_pred': 388.0, 'n_true': 699.0}
+2018-11-14 00:56:51,664:INFO: modifier {'n_correct': 83.0, 'n_pred': 94.0, 'n_true': 143.0}
+2018-11-14 00:56:51,664:INFO: Participant {'n_correct': 269.0, 'n_pred': 373.0, 'n_true': 387.0}
+2018-11-14 00:56:51,664:INFO: measure {'n_correct': 196.0, 'n_pred': 217.0, 'n_true': 361.0}
+2018-11-14 00:56:51,664:INFO: p: 0.5959183673469388
+2018-11-14 00:56:51,665:INFO: r: 0.5397412199630314
+2018-11-14 00:56:51,665:INFO: f1: 0.5664403491755576
+2018-11-14 00:56:51,665:INFO: Outcome {'n_correct': 659.0, 'n_pred': 793.0, 'n_true': 901.0}
+2018-11-14 00:56:51,665:INFO: Intervention {'n_correct': 319.0, 'n_pred': 388.0, 'n_true': 699.0}
+2018-11-14 00:56:51,665:INFO: modifier {'n_correct': 83.0, 'n_pred': 94.0, 'n_true': 143.0}
+2018-11-14 00:56:51,665:INFO: Participant {'n_correct': 269.0, 'n_pred': 373.0, 'n_true': 387.0}
+2018-11-14 00:56:51,665:INFO: measure {'n_correct': 196.0, 'n_pred': 217.0, 'n_true': 361.0}
+2018-11-14 00:56:51,665:INFO: p= 0.5959183673469388
+2018-11-14 00:56:51,665:INFO: r= 0.5397412199630314
+2018-11-14 00:56:51,666:INFO: f1= 0.5664403491755576
+2018-11-14 00:56:59,310:INFO: Initializing tf session
+2018-11-14 00:56:59,961:INFO: Reloading the latest trained model...
+2018-11-14 00:56:59,962:INFO: Restoring parameters from /home/tk2624/projects/lstm-crf-py3/tian_data_span/result_wpre_set6_clean/model.weights/
+2018-11-14 00:57:00,106:INFO: Testing model over test set
+2018-11-14 00:57:03,339:INFO: Outcome {'n_correct': 958.0, 'n_pred': 995.0, 'n_true': 1075.0}
+2018-11-14 00:57:03,340:INFO: Intervention {'n_correct': 444.0, 'n_pred': 477.0, 'n_true': 611.0}
+2018-11-14 00:57:03,340:INFO: modifier {'n_correct': 117.0, 'n_pred': 118.0, 'n_true': 150.0}
+2018-11-14 00:57:03,340:INFO: Participant {'n_correct': 337.0, 'n_pred': 414.0, 'n_true': 394.0}
+2018-11-14 00:57:03,340:INFO: measure {'n_correct': 501.0, 'n_pred': 534.0, 'n_true': 542.0}
+2018-11-14 00:57:03,340:INFO: p= 0.7475247524752475
+2018-11-14 00:57:03,340:INFO: r= 0.7359870024370431
+2018-11-14 00:57:03,340:INFO: f1= 0.7417110110519853
+2018-11-14 00:57:03,340:INFO: f1 0.89 - p 0.93 - r 0.85
+2018-11-18 14:32:49,151:INFO: Initializing tf session
+2018-11-18 14:32:50,520:INFO: Reloading the latest trained model...
+2018-11-18 14:32:50,521:INFO: Restoring parameters from /Users/tian/Documents/GoogleDrive/Dissertation_drivefolder/PICO_Parser/pretrained_model/span/result_wpre_set6_clean/model.weights/
+2018-11-18 14:33:13,344:INFO: Initializing tf session
+2018-11-18 14:33:14,510:INFO: Reloading the latest trained model...
+2018-11-18 14:33:14,510:INFO: Restoring parameters from /Users/tian/Documents/GoogleDrive/Dissertation_drivefolder/PICO_Parser/pretrained_model/span/result_wpre_set6_clean/model.weights/
+2018-11-18 14:33:37,186:INFO: Initializing tf session
+2018-11-18 14:33:38,351:INFO: Reloading the latest trained model...
+2018-11-18 14:33:38,352:INFO: Restoring parameters from /Users/tian/Documents/GoogleDrive/Dissertation_drivefolder/PICO_Parser/pretrained_model/span/result_wpre_set6_clean/model.weights/
+2018-11-18 14:34:40,394:INFO: Initializing tf session
+2018-11-18 14:34:41,521:INFO: Reloading the latest trained model...
+2018-11-18 14:34:41,522:INFO: Restoring parameters from /Users/tian/Documents/GoogleDrive/Dissertation_drivefolder/PICO_Parser/pretrained_model/span/result_wpre_set6_clean/model.weights/

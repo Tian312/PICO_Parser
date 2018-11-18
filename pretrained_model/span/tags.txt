@@ -1,0 +1,6 @@
+Outcome
+Intervention
+modifier
+Participant
+measure
+O
