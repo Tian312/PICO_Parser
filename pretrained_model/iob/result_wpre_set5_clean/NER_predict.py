@@ -21,7 +21,6 @@ time1 = time.time()
 parser_config = parser_Config()
 
 if parser_config.use_UMLS >0:
-
     #QuickUMLS matcher
     from QuickUMLS.quickumls import QuickUMLS
     matcher = QuickUMLS(parser_config.QuickUMLS_dir,threshold=0.8)
@@ -41,6 +40,7 @@ def main():
     #generate xml   
     output_xml = parser_config.outfile_dir
     txtconll.generate_XML(output_xml,matcher,parser_config.use_UMLS)
+
     time3 = time.time()
     print ("formatting xml...")
     print ("saving xml file in "+output_xml+"\n"+ str(time3-time0)+" s in total...")

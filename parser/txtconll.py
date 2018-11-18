@@ -203,7 +203,7 @@ def conll2txt (conll_file,matcher):
     i = 0
     return sents,entity
 
-def conll2txt_no_umls(conll_file,matcher):
+def conll2txt_no_umls(conll_file):
     attribute_lists=['modifier','measure']
     entity_lists=['Participant','Intervention','Outcome']
     sent_flag=0 #
@@ -317,7 +317,7 @@ def generate_XML(NERxml_dir,matcher,use_UMLS = 0,crfresult_dir="temp.conll"):
     crfresult_input = codecs.open(crfresult_dir,'r')
     NERxml_output=codecs.open(NERxml_dir,'w')
     if use_UMLS ==0:
-        sents,entities_result=conll2txt_no_umls(crfresult_input,matcher)
+        sents,entities_result=conll2txt_no_umls(crfresult_input)
     else:
         sents,entities_result=conll2txt(crfresult_input,matcher)
     entity_lists=['Participant','Intervention','Outcome']
@@ -360,5 +360,6 @@ def generate_XML(NERxml_dir,matcher,use_UMLS = 0,crfresult_dir="temp.conll"):
         NERxml_output.write("\t\t\t"+entities)
         NERxml_output.write("\t\t"+"</sent>\n")
         j+=1
-    #print >>NERxml_output,"</root>"
     NERxml_output.write("\t</abstract>\n</root>\n")
+    rm_command = "rm "+crfresult_dir
+    os.system(rm_command)
