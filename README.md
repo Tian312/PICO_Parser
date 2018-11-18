@@ -1,10 +1,10 @@
 # PICO_Parser
-------------
+
 Parse PubMed abstracts following PICO framework. 
 
 
 ## Usage  
-------------
+
 1.  install `requirements.txt`
 2.  if you want to use UMLS to standardize entities, please install ['UMLS'](https://www.nlm.nih.gov/research/umls/licensedcontent/umlsknowledgesources.html) and ['QuickUMLS'](https://github.com/Georgetown-IR-Lab/QuickUMLS) locally  
 3.  edit `parser_config.py` to customize your own diretories and installation  
@@ -12,7 +12,7 @@ Parse PubMed abstracts following PICO framework.
 
 
 ## Exmample  
-------------
+
 **Input**  `test.txt`  
 **Parsing results** `temp.xml`  
 
@@ -53,6 +53,6 @@ Parse PubMed abstracts following PICO framework.
 ```
 
 ## Reference
-------------
+
 - Parser achitecture is adapted from my previous project of eligibility criteria parser [`EliIE`](https://github.com/Tian312/EliIE). 
 - LSTM-CRF scritps modified from [EBM-NLP](https://github.com/bepnye/EBM-NLP/tree/master/acl_scripts/lstm-crf)   
