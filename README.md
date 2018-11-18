@@ -1,7 +1,9 @@
 # PICO_Parser
 
-Parse PubMed abstracts following PICO framework. 
+**Parse PubMed abstracts following PICO framework to standarize PICO elements . **
 
+-- Author: Tian Kang (tk2624@cumc.columbia.edu)
+-- Affiliation: Department of Biomedical Informatics, Columbia Univerisity ([Dr. Chunhua Weng's lab](http://people.dbmi.columbia.edu/~chw7007/))
 
 ## Usage  
 
