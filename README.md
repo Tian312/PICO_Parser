@@ -1,9 +1,9 @@
 # PICO_Parser
 
-**Parse PubMed abstracts following PICO framework to standarize PICO elements . **
+**Parse PubMed abstracts following PICO framework to standarize PICO elements.**  
 
--- Author: Tian Kang (tk2624@cumc.columbia.edu)
--- Affiliation: Department of Biomedical Informatics, Columbia Univerisity ([Dr. Chunhua Weng's lab](http://people.dbmi.columbia.edu/~chw7007/))
+* Author: Tian Kang (tk2624@cumc.columbia.edu)  
+* Affiliation: Department of Biomedical Informatics, Columbia Univerisity ([Dr. Chunhua Weng](http://people.dbmi.columbia.edu/~chw7007/)'s lab)  
 
 ## Usage  
 
@@ -18,7 +18,7 @@
 **Input**  `test.txt`  
 **Parsing results** `temp.xml`  
 
-  A double-blind crossover comparison of pindolol , metoprolol , atenolol and labetalol in mild to moderate hypertension . 1 This study was designed to compare in a double-blind randomized crossover trial , atenolol , labetalol , metoprolol and pindolol . Considerable differences in dose ( atenolol 138 +/- 13 mg daily ; labetalol 308 +/- 34 mg daily ; metoprolol 234 +/- 22 mg daily ; and pindolol 24 +/-2 mg daily were required to produce similar antihypertensive effects . 
+    A double-blind crossover comparison of pindolol , metoprolol , atenolol and labetalol in mild to moderate hypertension . 1     This study was designed to compare in a double-blind randomized crossover trial , atenolol , labetalol , metoprolol and pindolol . Considerable differences in dose ( atenolol 138 +/- 13 mg daily ; labetalol 308 +/- 34 mg daily ; metoprolol 234 +/- 22 mg daily ; and pindolol 24 +/-2 mg daily were required to produce similar antihypertensive effects . 
   
 ```xml
 <abstract>
@@ -56,5 +56,5 @@
 
 ## Reference
 
-- Parser achitecture is adapted from my previous project of eligibility criteria parser [`EliIE`](https://github.com/Tian312/EliIE). 
+- Parser achitecture is adapted from my previous project of eligibility criteria parser [`EliIE`](https://github.com/Tian312/EliIE).   
 - LSTM-CRF scritps modified from [EBM-NLP](https://github.com/bepnye/EBM-NLP/tree/master/acl_scripts/lstm-crf)   
