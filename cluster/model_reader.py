@@ -9,9 +9,11 @@ warnings.simplefilter(action='ignore', category=UserWarning)
 import numpy
 from nltk.corpus import stopwords
 
-from context_models import CbowContext, BiLstmContext
-from defs import IN_TO_OUT_UNITS_RATIO, NEGATIVE_SAMPLING_NUM
+from cluster.context_models import CbowContext, BiLstmContext
+from cluster.defs import IN_TO_OUT_UNITS_RATIO, NEGATIVE_SAMPLING_NUM
 
+#from context_models import CbowContext, BiLstmContext
+#from defs import IN_TO_OUT_UNITS_RATIO, NEGATIVE_SAMPLING_NUM
 
 class ModelReader(object):
     '''

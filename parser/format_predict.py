@@ -58,9 +58,13 @@ def get_predict(input_dir,model,output_dir="temp.conll"):
         sent_text = nltk.sent_tokenize(abs[i].rstrip())
 
         for sent in sent_text:
+            skip = re.search("background|implication|match",sent,re.IGNORECASE)
             words = sent.split()
-            preds=model.predict(words)
-            preds=check_IOB(preds)
+            if skip:
+                preds = ["O"]*len(words)
+            else:
+                preds=model.predict(words)
+                preds=check_IOB(preds)
             for (w, p) in zip(words, preds):
                 outfile.write(w+"\t"+p+"\n")
             outfile.write("\n")

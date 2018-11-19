@@ -1,0 +1,11 @@
+B-Participant
+I-Participant
+I-Intervention
+B-modifier
+I-modifier
+O
+B-Intervention
+I-measure
+I-Outcome
+B-measure
+B-Outcome

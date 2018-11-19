@@ -1,72 +1,54 @@
-2018-11-15 20:57:35,300:INFO: Initializing tf session
-2018-11-15 20:57:35,952:INFO: Reloading the latest trained model...
-2018-11-15 20:57:35,953:INFO: Restoring parameters from tian_data_iob/result_for_data/model.weights/
-2018-11-15 20:57:37,062:INFO: Epoch 1 out of 80
-2018-11-15 20:58:14,754:INFO: f1 0.67 - p 0.76 - r 0.59
-2018-11-15 20:58:15,294:INFO: - new best score!
-2018-11-15 20:58:15,294:INFO: Epoch 2 out of 80
-2018-11-15 20:58:51,789:INFO: f1 0.69 - p 0.80 - r 0.61
-2018-11-15 20:58:52,320:INFO: - new best score!
-2018-11-15 20:58:52,320:INFO: Epoch 3 out of 80
-2018-11-15 20:59:28,821:INFO: f1 0.72 - p 0.81 - r 0.64
-2018-11-15 20:59:29,351:INFO: - new best score!
-2018-11-15 20:59:29,351:INFO: Epoch 4 out of 80
-2018-11-15 21:00:05,957:INFO: f1 0.73 - p 0.83 - r 0.65
-2018-11-15 21:00:06,490:INFO: - new best score!
-2018-11-15 21:00:06,490:INFO: Epoch 5 out of 80
-2018-11-15 21:00:43,012:INFO: f1 0.74 - p 0.82 - r 0.68
-2018-11-15 21:00:43,542:INFO: - new best score!
-2018-11-15 21:00:43,543:INFO: Epoch 6 out of 80
-2018-11-15 21:01:19,999:INFO: f1 0.75 - p 0.83 - r 0.68
-2018-11-15 21:01:20,537:INFO: - new best score!
-2018-11-15 21:01:20,538:INFO: Epoch 7 out of 80
-2018-11-15 21:01:56,968:INFO: f1 0.74 - p 0.82 - r 0.67
-2018-11-15 21:01:56,969:INFO: Epoch 8 out of 80
-2018-11-15 21:02:33,435:INFO: f1 0.73 - p 0.82 - r 0.66
-2018-11-15 21:02:33,436:INFO: Epoch 9 out of 80
-2018-11-15 21:03:09,861:INFO: f1 0.74 - p 0.82 - r 0.67
-2018-11-15 21:03:09,862:INFO: - early stopping 3 epochs without improvement
-2018-11-15 21:03:09,862:INFO: B-Participant {'n_correct': 133.0, 'n_pred': 158.0, 'n_true': 210.0}
-2018-11-15 21:03:09,862:INFO: I-Participant {'n_correct': 124.0, 'n_pred': 181.0, 'n_true': 211.0}
-2018-11-15 21:03:09,862:INFO: I-Intervention {'n_correct': 213.0, 'n_pred': 258.0, 'n_true': 443.0}
-2018-11-15 21:03:09,862:INFO: B-modifier {'n_correct': 88.0, 'n_pred': 96.0, 'n_true': 140.0}
-2018-11-15 21:03:09,862:INFO: I-modifier {'n_correct': 1.0, 'n_pred': 1.0, 'n_true': 9.0}
-2018-11-15 21:03:09,862:INFO: B-Intervention {'n_correct': 257.0, 'n_pred': 322.0, 'n_true': 355.0}
-2018-11-15 21:03:09,862:INFO: I-measure {'n_correct': 297.0, 'n_pred': 325.0, 'n_true': 412.0}
-2018-11-15 21:03:09,862:INFO: I-Outcome {'n_correct': 507.0, 'n_pred': 595.0, 'n_true': 663.0}
-2018-11-15 21:03:09,862:INFO: B-measure {'n_correct': 114.0, 'n_pred': 147.0, 'n_true': 182.0}
-2018-11-15 21:03:09,862:INFO: B-Outcome {'n_correct': 252.0, 'n_pred': 338.0, 'n_true': 322.0}
-2018-11-15 21:03:09,862:INFO: p: 0.6012965964343598
-2018-11-15 21:03:09,862:INFO: r: 0.6137303556658396
-2018-11-15 21:03:09,862:INFO: f1: 0.6074498567335244
-2018-11-15 21:03:09,862:INFO: B-Participant {'n_correct': 133.0, 'n_pred': 158.0, 'n_true': 210.0}
-2018-11-15 21:03:09,862:INFO: I-Participant {'n_correct': 124.0, 'n_pred': 181.0, 'n_true': 211.0}
-2018-11-15 21:03:09,863:INFO: I-Intervention {'n_correct': 213.0, 'n_pred': 258.0, 'n_true': 443.0}
-2018-11-15 21:03:09,863:INFO: B-modifier {'n_correct': 88.0, 'n_pred': 96.0, 'n_true': 140.0}
-2018-11-15 21:03:09,863:INFO: I-modifier {'n_correct': 1.0, 'n_pred': 1.0, 'n_true': 9.0}
-2018-11-15 21:03:09,863:INFO: B-Intervention {'n_correct': 257.0, 'n_pred': 322.0, 'n_true': 355.0}
-2018-11-15 21:03:09,863:INFO: I-measure {'n_correct': 297.0, 'n_pred': 325.0, 'n_true': 412.0}
-2018-11-15 21:03:09,863:INFO: I-Outcome {'n_correct': 507.0, 'n_pred': 595.0, 'n_true': 663.0}
-2018-11-15 21:03:09,863:INFO: B-measure {'n_correct': 114.0, 'n_pred': 147.0, 'n_true': 182.0}
-2018-11-15 21:03:09,863:INFO: B-Outcome {'n_correct': 252.0, 'n_pred': 338.0, 'n_true': 322.0}
-2018-11-15 21:03:09,863:INFO: p= 0.6012965964343598
-2018-11-15 21:03:09,863:INFO: r= 0.6137303556658396
-2018-11-15 21:03:09,863:INFO: f1= 0.6074498567335244
-2018-11-15 21:03:17,253:INFO: Initializing tf session
-2018-11-15 21:03:17,906:INFO: Reloading the latest trained model...
-2018-11-15 21:03:17,908:INFO: Restoring parameters from /home/tk2624/projects/lstm-crf-for-iob/tian_data_iob/result_wpre_set4_clean/model.weights/
-2018-11-15 21:03:18,090:INFO: Testing model over test set
-2018-11-15 21:03:21,547:INFO: B-Participant {'n_correct': 142.0, 'n_pred': 179.0, 'n_true': 213.0}
-2018-11-15 21:03:21,548:INFO: I-Participant {'n_correct': 204.0, 'n_pred': 245.0, 'n_true': 276.0}
-2018-11-15 21:03:21,548:INFO: I-Intervention {'n_correct': 191.0, 'n_pred': 252.0, 'n_true': 319.0}
-2018-11-15 21:03:21,548:INFO: B-modifier {'n_correct': 87.0, 'n_pred': 100.0, 'n_true': 126.0}
-2018-11-15 21:03:21,548:INFO: I-modifier {'n_correct': 0.0, 'n_pred': 0.0, 'n_true': 7.0}
-2018-11-15 21:03:21,548:INFO: B-Intervention {'n_correct': 258.0, 'n_pred': 313.0, 'n_true': 349.0}
-2018-11-15 21:03:21,548:INFO: I-measure {'n_correct': 123.0, 'n_pred': 146.0, 'n_true': 209.0}
-2018-11-15 21:03:21,548:INFO: I-Outcome {'n_correct': 495.0, 'n_pred': 540.0, 'n_true': 680.0}
-2018-11-15 21:03:21,548:INFO: B-measure {'n_correct': 64.0, 'n_pred': 70.0, 'n_true': 113.0}
-2018-11-15 21:03:21,548:INFO: B-Outcome {'n_correct': 315.0, 'n_pred': 377.0, 'n_true': 408.0}
-2018-11-15 21:03:21,548:INFO: p= 0.6054097056483692
-2018-11-15 21:03:21,549:INFO: r= 0.62944582299421
-2018-11-15 21:03:21,549:INFO: f1= 0.6171938361719383
-2018-11-15 21:03:21,549:INFO: f1 0.76 - p 0.85 - r 0.70
+2018-11-14 00:46:13,698:INFO: Initializing tf session
+2018-11-14 00:46:14,356:INFO: Reloading the latest trained model...
+2018-11-14 00:46:14,357:INFO: Restoring parameters from tian_data_span/result_for_data_2/model.weights/
+2018-11-14 00:46:15,599:INFO: Epoch 1 out of 80
+2018-11-14 00:46:52,647:INFO: f1 0.75 - p 0.86 - r 0.67
+2018-11-14 00:46:53,193:INFO: - new best score!
+2018-11-14 00:46:53,193:INFO: Epoch 2 out of 80
+2018-11-14 00:47:28,466:INFO: f1 0.74 - p 0.87 - r 0.65
+2018-11-14 00:47:28,467:INFO: Epoch 3 out of 80
+2018-11-14 00:48:03,814:INFO: f1 0.75 - p 0.89 - r 0.65
+2018-11-14 00:48:03,815:INFO: Epoch 4 out of 80
+2018-11-14 00:48:38,990:INFO: f1 0.75 - p 0.89 - r 0.66
+2018-11-14 00:48:38,991:INFO: - early stopping 3 epochs without improvement
+2018-11-14 00:48:38,991:INFO: Outcome {'n_correct': 759.0, 'n_pred': 840.0, 'n_true': 985.0}
+2018-11-14 00:48:38,991:INFO: Intervention {'n_correct': 486.0, 'n_pred': 528.0, 'n_true': 798.0}
+2018-11-14 00:48:38,991:INFO: modifier {'n_correct': 92.0, 'n_pred': 99.0, 'n_true': 149.0}
+2018-11-14 00:48:38,991:INFO: Participant {'n_correct': 294.0, 'n_pred': 368.0, 'n_true': 421.0}
+2018-11-14 00:48:38,991:INFO: measure {'n_correct': 302.0, 'n_pred': 349.0, 'n_true': 594.0}
+2018-11-14 00:48:38,991:INFO: p: 0.6185752930568079
+2018-11-14 00:48:38,991:INFO: r: 0.5697674418604651
+2018-11-14 00:48:38,992:INFO: f1: 0.5931690445309122
+2018-11-14 00:48:38,992:INFO: Outcome {'n_correct': 759.0, 'n_pred': 840.0, 'n_true': 985.0}
+2018-11-14 00:48:38,992:INFO: Intervention {'n_correct': 486.0, 'n_pred': 528.0, 'n_true': 798.0}
+2018-11-14 00:48:38,992:INFO: modifier {'n_correct': 92.0, 'n_pred': 99.0, 'n_true': 149.0}
+2018-11-14 00:48:38,992:INFO: Participant {'n_correct': 294.0, 'n_pred': 368.0, 'n_true': 421.0}
+2018-11-14 00:48:38,992:INFO: measure {'n_correct': 302.0, 'n_pred': 349.0, 'n_true': 594.0}
+2018-11-14 00:48:38,992:INFO: p= 0.6185752930568079
+2018-11-14 00:48:38,992:INFO: r= 0.5697674418604651
+2018-11-14 00:48:38,992:INFO: f1= 0.5931690445309122
+2018-11-14 00:48:48,213:INFO: Initializing tf session
+2018-11-14 00:48:48,956:INFO: Reloading the latest trained model...
+2018-11-14 00:48:48,957:INFO: Restoring parameters from /home/tk2624/projects/lstm-crf-py3/tian_data_span/result_wpre_set4_clean/model.weights/
+2018-11-14 00:48:49,134:INFO: Testing model over test set
+2018-11-14 00:48:52,436:INFO: Outcome {'n_correct': 885.0, 'n_pred': 1006.0, 'n_true': 1088.0}
+2018-11-14 00:48:52,437:INFO: Intervention {'n_correct': 471.0, 'n_pred': 584.0, 'n_true': 668.0}
+2018-11-14 00:48:52,437:INFO: modifier {'n_correct': 68.0, 'n_pred': 72.0, 'n_true': 133.0}
+2018-11-14 00:48:52,437:INFO: Participant {'n_correct': 312.0, 'n_pred': 364.0, 'n_true': 489.0}
+2018-11-14 00:48:52,437:INFO: measure {'n_correct': 133.0, 'n_pred': 144.0, 'n_true': 322.0}
+2018-11-14 00:48:52,437:INFO: p= 0.5694164989939637
+2018-11-14 00:48:52,437:INFO: r= 0.4681555004135649
+2018-11-14 00:48:52,437:INFO: f1= 0.5138447571493419
+2018-11-14 00:48:52,437:INFO: f1 0.77 - p 0.86 - r 0.69
+2018-11-18 22:03:12,030:INFO: Initializing tf session
+2018-11-18 22:03:12,692:INFO: Reloading the latest trained model...
+2018-11-18 22:03:12,694:INFO: Restoring parameters from /home/tk2624/projects/lstm-crf-py3/tian_data_span/result_wpre_set4_clean/model.weights/
+2018-11-18 22:04:14,557:INFO: Initializing tf session
+2018-11-18 22:04:15,218:INFO: Reloading the latest trained model...
+2018-11-18 22:04:15,220:INFO: Restoring parameters from /home/tk2624/projects/PICO_Parser/pretrained_model/span/result_wpre_set4_clean/model.weights/
+2018-11-19 00:23:54,280:INFO: Initializing tf session
+2018-11-19 00:23:55,009:INFO: Reloading the latest trained model...
+2018-11-19 00:23:55,010:INFO: Restoring parameters from /home/tk2624/projects/PICO_Parser/pretrained_model/span/result_wpre_set4_clean/model.weights/
+2018-11-19 00:31:34,166:INFO: Initializing tf session
+2018-11-19 00:31:34,780:INFO: Reloading the latest trained model...
+2018-11-19 00:31:34,781:INFO: Restoring parameters from /home/tk2624/projects/PICO_Parser/pretrained_model/span/result_wpre_set4_clean/model.weights/

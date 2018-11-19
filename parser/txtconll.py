@@ -87,12 +87,22 @@ def conll2txt (conll_file,matcher):
             #####======= ADD UMLS tagging #===============
             new_concept = [] 
             for line_concept in concept.split("\n"):
+                #=== temporary rule:=====
+                line_concept =re.sub(r"\( group I+ \)","",line_concept)
+                #==========================
                 match =re.search(r">\s+(.*)\s+<",line_concept)
                 if match:
                     if re.search("measure|modifier",line_concept):
                         new_concept.append(line_concept)
                     else:
                         text = match.group(1)
+                        
+                        #=== temporary rule:=====
+                        
+                        match =re.search("^\s+$|group\s+I",text)
+                        if match:
+                            continue
+                        #==========================
                         taggings = get_umls_tagging(text, matcher)
                         umls_tag = "UMLS=\'"
                         if taggings is not None:
@@ -180,6 +190,13 @@ def conll2txt (conll_file,matcher):
                 new_concept.append(line_concept)
             else:
                 text = match.group(1)
+                
+                #==== temp rules =====
+                match =re.search("group\sI+",text)        
+                if match:
+                    continue
+                #===============
+
                 taggings = get_umls_tagging(text, matcher)
                 umls_tag = "UMLS=\'"
                 if taggings:
@@ -235,9 +252,23 @@ def conll2txt_no_umls(conll_file):
                 term_flag=0
             new_line=" ".join(raw_terms)
             concept=" ".join(terms)
-            
-            entity.append(concept)
+           
+            # ========== temp rules ============
+            concepts=concept.split("\n")
+            concepts =re.sub(r"\( group I+ \)","",concepts)
 
+            concept_new = []
+            for c in concepts:
+                match = re.search("^\s+$|group\s+I+",c)
+                if match:
+                    continue
+                else:
+                    concept_new.append(c)
+            concept = "\n".join(concept_new)
+            # =================================
+
+            entity.append(concept)
+            
             sents.append(new_line)
             
             terms=[]

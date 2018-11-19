@@ -85,3 +85,24 @@
 2018-11-15 21:21:46,167:INFO: r= 0.640194489465154
 2018-11-15 21:21:46,167:INFO: f1= 0.6360708534621579
 2018-11-15 21:21:46,167:INFO: f1 0.78 - p 0.86 - r 0.71
+2018-11-18 22:07:25,311:INFO: Initializing tf session
+2018-11-18 22:07:25,966:INFO: Reloading the latest trained model...
+2018-11-18 22:07:25,968:INFO: Restoring parameters from /home/tk2624/projects/lstm-crf-for-iob/tian_data_iob/result_wpre_set6_clean/model.weights/
+2018-11-18 22:07:56,394:INFO: Initializing tf session
+2018-11-18 22:07:57,048:INFO: Reloading the latest trained model...
+2018-11-18 22:07:57,049:INFO: Restoring parameters from /home/tk2624/projects/lstm-crf-for-iob/tian_data_iob/result_wpre_set6_clean/model.weights/
+2018-11-18 22:09:13,360:INFO: Initializing tf session
+2018-11-18 22:09:14,031:INFO: Reloading the latest trained model...
+2018-11-18 22:09:14,032:INFO: Restoring parameters from /home/tk2624/projects/lstm-crf-for-iob/tian_data_iob/result_wpre_set6_clean/model.weights/
+2018-11-18 22:32:53,317:INFO: Initializing tf session
+2018-11-18 22:32:53,953:INFO: Reloading the latest trained model...
+2018-11-18 22:32:53,954:INFO: Restoring parameters from /home/tk2624/projects/PICO_Parser/pretrained_model/iob/result_wpre_set6_clean/model.weights/
+2018-11-18 22:33:28,694:INFO: Initializing tf session
+2018-11-18 22:33:29,366:INFO: Reloading the latest trained model...
+2018-11-18 22:33:29,367:INFO: Restoring parameters from /home/tk2624/projects/PICO_Parser/pretrained_model/iob/result_wpre_set6_clean/model.weights/
+2018-11-18 22:47:53,879:INFO: Initializing tf session
+2018-11-18 22:47:54,562:INFO: Reloading the latest trained model...
+2018-11-18 22:47:54,563:INFO: Restoring parameters from /home/tk2624/projects/PICO_Parser/pretrained_model/iob/result_wpre_set6_clean/model.weights/
+2018-11-19 00:33:07,361:INFO: Initializing tf session
+2018-11-19 00:33:07,979:INFO: Reloading the latest trained model...
+2018-11-19 00:33:07,981:INFO: Restoring parameters from /home/tk2624/projects/PICO_Parser/pretrained_model/iob/result_wpre_set6_clean/model.weights/
