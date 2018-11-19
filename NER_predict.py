@@ -20,12 +20,12 @@ model.restore_session(config.dir_model)
 time1 = time.time()
 parser_config = parser_Config()
 
+matcher = None
 if parser_config.use_UMLS >0:
     #QuickUMLS matcher
     from QuickUMLS.quickumls import QuickUMLS
     matcher = QuickUMLS(parser_config.QuickUMLS_dir,threshold=0.8)
-else:
-    matcher = None
+
 print ("loading model...",time1-time0)
 
 
@@ -38,7 +38,7 @@ def main():
     print ("\nprediting..."),time2-time1   
     
     #generate xml   
-    output_xml = parser_config.outfile_dir
+    output_xml = parser_config.outxml_dir
     txtconll.generate_XML(output_xml,matcher,parser_config.use_UMLS)
 
     time3 = time.time()
