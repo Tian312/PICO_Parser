@@ -11,7 +11,7 @@
 1.  Install `requirements.txt`
 2.  If you want to use UMLS to standardize entities, please install ['UMLS'](https://www.nlm.nih.gov/research/umls/licensedcontent/umlsknowledgesources.html) and ['QuickUMLS'](https://github.com/Georgetown-IR-Lab/QuickUMLS) locally  
 3.  Edit `parser_config.py` to customize your own diretories and installation  
-4.  Run `python NER_predict.py` to start parsing  
+4.  Run `python Phase1_NER_predict.py` to start parsing  
 
 #### Clustering parsed PICO elements to represent study design    
 1. Download context vector pretrained in all pubmed abstracts from 1990-2019 (downlaod link in [cluster/model/download.txt](https://github.com/Tian312/PICO_Parser/blob/master/cluster/model/download.txt))   
