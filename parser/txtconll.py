@@ -131,7 +131,7 @@ def conll2txt (conll_file,matcher):
             if re.search("##NCT",line):
                 line=re.sub("##","",line)
 
-            line=re.sub("\:","",line)
+            #line=re.sub("\:","",line)
             line=re.sub("&","and",line)
             info=line.split()
             word=info[0]
@@ -393,4 +393,4 @@ def generate_XML(NERxml_dir,matcher,use_UMLS = 0,crfresult_dir="temp.conll"):
         j+=1
     NERxml_output.write("\t</abstract>\n</root>\n")
     rm_command = "rm "+crfresult_dir
-    os.system(rm_command)
+    #os.system(rm_command)

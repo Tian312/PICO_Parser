@@ -1,5 +1,8 @@
 import sys,re,os,codecs
 import nltk
+
+
+
 def raw2IOB(preds):
     new_preds=[]
     begin = 0
@@ -29,6 +32,7 @@ def raw2IOB(preds):
     return new_preds
 
 def check_IOB(preds):
+    
     start =0
     match = re.search("B-",str(preds))
     if not match:
@@ -39,8 +43,12 @@ def check_IOB(preds):
     new_preds=new_s.split("=")
     return (new_preds)
 
+def clean_text(text):
+    words = word_tokenize(text)
+    return " ".join(words)
 
-def get_predict(input_dir,model,output_dir="temp.conll"):
+
+def get_predict(input_dir,model,tokenizer, output_dir="temp.conll"):
 
     infile=codecs.open(input_dir,'r').read()
     outfile=codecs.open(output_dir,'w')
@@ -55,16 +63,19 @@ def get_predict(input_dir,model,output_dir="temp.conll"):
     for i in range(len(abs)):
         if abs[i] == "":
             continue
-        sent_text = nltk.sent_tokenize(abs[i].rstrip())
+        sent_text = tokenizer.sent_tokenize(abs[i].rstrip())
 
         for sent in sent_text:
+            #print ("\n",sent)
             skip = re.search("background|implication|match",sent,re.IGNORECASE)
             words = sent.split()
             if skip:
                 preds = ["O"]*len(words)
             else:
                 preds=model.predict(words)
+                #print (preds)
                 preds=check_IOB(preds)
+                #print (preds,"===")
             for (w, p) in zip(words, preds):
                 outfile.write(w+"\t"+p+"\n")
             outfile.write("\n")
