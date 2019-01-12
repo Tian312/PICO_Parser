@@ -1,6 +1,6 @@
 import sys,re,os,codecs
 import nltk
-
+from rusenttokenize import ru_sent_tokenize
 
 
 def raw2IOB(preds):
@@ -63,12 +63,15 @@ def get_predict(input_dir,model,tokenizer, output_dir="temp.conll"):
     for i in range(len(abs)):
         if abs[i] == "":
             continue
-        sent_text = tokenizer.sent_tokenize(abs[i].rstrip())
-
+        #sent_text = tokenizer.sent_tokenize(abs[i].rstrip())
+        sent_text = ru_sent_tokenize(abs[i].rstrip())
         for sent in sent_text:
             #print ("\n",sent)
             skip = re.search("background|implication|match",sent,re.IGNORECASE)
-            words = sent.split()
+            #words = sent.split()
+            words = tokenizer.word_tokenize(sent)
+            print (sent)
+            print (words)
             if skip:
                 preds = ["O"]*len(words)
             else:
