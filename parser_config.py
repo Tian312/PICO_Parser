@@ -4,8 +4,8 @@ class Config():
     
     # Parser basic config
     data_dir = "pretrained_model/iob"
-    #pretrain_dir = "pretrained_model/iob/result_wpre_set4_clean"
-    pretrain_dir= "/home/tk2624/projects/lstm-crf-for-iob/tian_data_iob/result_wpre_set1_clean"
+    pretrain_dir = "pretrained_model/iob/result_wpre_set4_clean"
+    #pretrain_dir= "/home/tk2624/projects/lstm-crf-for-iob/tian_data_iob/result_wpre_set6_clean"
     infile_dir="test.txt"
     outxml_dir = "test.xml"
     
@@ -19,5 +19,5 @@ class Config():
     
     #cluster config
     c2v_model_param_file_dir = "cluster/model/pubmed.c2v.200d.model.params"
-    outcluster_dir = "test.txt.cluster"
+    outcluster_dir = "test2.txt.cluster"
     

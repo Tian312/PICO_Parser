@@ -9,11 +9,15 @@ warnings.simplefilter(action='ignore', category=UserWarning)
 import numpy
 from nltk.corpus import stopwords
 
-from cluster.context_models import CbowContext, BiLstmContext
-from cluster.defs import IN_TO_OUT_UNITS_RATIO, NEGATIVE_SAMPLING_NUM
+from chainer import cuda
+import chainer.serializers as S
+import chainer.links as L
 
-#from context_models import CbowContext, BiLstmContext
-#from defs import IN_TO_OUT_UNITS_RATIO, NEGATIVE_SAMPLING_NUM
+#from cluster.context_models import CbowContext, BiLstmContext
+#from cluster.defs import IN_TO_OUT_UNITS_RATIO, NEGATIVE_SAMPLING_NUM
+
+from context_models import CbowContext, BiLstmContext
+from defs import IN_TO_OUT_UNITS_RATIO, NEGATIVE_SAMPLING_NUM
 
 class ModelReader(object):
     '''
@@ -24,7 +28,7 @@ class ModelReader(object):
         self.gpu = -1 # todo support gpu
        
         params = self.read_config_file(config_file)
-        self.w, self.word2index, self.index2word = self.read_model(params)
+        self.w, self.word2index, self.index2word,  self.model = self.read_model(params)
         
 
 
@@ -77,12 +81,12 @@ class ModelReader(object):
         target_word_units = IN_TO_OUT_UNITS_RATIO*unit
         
         cs = [1 for _ in range(len(word2index))] # dummy word counts - not used for eval
-        #loss_func = L.NegativeSampling(target_word_units, cs, NEGATIVE_SAMPLING_NUM) # dummy loss func - not used for eval
+        loss_func = L.NegativeSampling(target_word_units, cs, NEGATIVE_SAMPLING_NUM) # dummy loss func - not used for eval
         
-        #model = BiLstmContext(deep, self.gpu, word2index, context_word_units, lstm_hidden_units, target_word_units, loss_func, train, drop_ratio)
-        #S.load_npz(model_file, model)
+        model = BiLstmContext(deep, self.gpu, word2index, context_word_units, lstm_hidden_units, target_word_units, loss_func, train, drop_ratio)
+        S.load_npz(model_file, model)
         
-        return w, word2index, index2word
+        return w, word2index, index2word, model
     
     def read_bow_model(self, params):
         words_file = params['config_path'] + params['words_file']
@@ -119,7 +123,7 @@ class ModelReader(object):
             
         model = CbowContext(w, c, word2index, stop, window_size, word_counts)
         
-        return w, word2index, index2word
+        return w, word2index, index2word, model
 
 
     def read_words(self, filename):
