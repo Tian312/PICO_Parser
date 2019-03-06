@@ -1,2 +1,0 @@
-model_checkpoint_path: "/home/tk2624/projects/lstm-crf-py3/tian_data_span/result_wpre_set4_clean/model.weights/"
-all_model_checkpoint_paths: "/home/tk2624/projects/lstm-crf-py3/tian_data_span/result_wpre_set4_clean/model.weights/"

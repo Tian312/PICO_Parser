@@ -1,0 +1,44 @@
+{
+    "pmid":"10228190",
+    "sentences":{
+            "sent1":{
+
+                "Section":"METHODS",
+                "text":"We conducted a randomized , multicenter , double - blind , placebo-controlled trial of infliximab for the tre    atment of fistulas in patients with Crohn 's disease .",
+                "entities":{
+                    "entity1":{
+
+                        "text":"infliximab",
+                        "class":"Intervention",
+                        "negation":"0",
+                        "UMLS":"",
+                        "index":"T1",
+                        "start":"19"
+
+                    },
+                    "attribute1":{
+
+                        "text":"fistulas",
+                        "class":"Participant",
+                        "negation":"0",
+                        "UMLS":"",
+                        "index":"T2",
+                        "start":"22"
+                    }
+                },
+                "relations":{
+                    "rel1":{              
+
+                        "class":"has_value",
+                        "left":"T1",
+                        "right":"T2"
+                    }
+
+                }
+
+            },
+        "sent2":
+        {}
+    }
+
+}

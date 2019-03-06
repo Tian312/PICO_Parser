@@ -1,7 +1,5 @@
 import sys,re,os,codecs
-import nltk
-from rusenttokenize import ru_sent_tokenize
-
+import time
 
 def raw2IOB(preds):
     new_preds=[]
@@ -47,41 +45,19 @@ def clean_text(text):
     words = word_tokenize(text)
     return " ".join(words)
 
-
-def get_predict(input_dir,model,tokenizer, output_dir="temp.conll"):
-
-    infile=codecs.open(input_dir,'r').read()
-    outfile=codecs.open(output_dir,'w')
-    abs = infile.split("\n")
-    last = 0-len(abs)
-    j = -1
-    while len(abs)>1:
-        if abs[j].rstrip() == "":
-            del abs[j]
-        else:
-            break
-    for i in range(len(abs)):
-        if abs[i] == "":
-            continue
-        #sent_text = tokenizer.sent_tokenize(abs[i].rstrip())
-        sent_text = ru_sent_tokenize(abs[i].rstrip())
-        for sent in sent_text:
-            #print ("\n",sent)
-            skip = re.search("background|implication|match",sent,re.IGNORECASE)
-            #words = sent.split()
-            words = tokenizer.word_tokenize(sent)
-            print (sent)
-            print (words)
-            if skip:
-                preds = ["O"]*len(words)
-            else:
-                preds=model.predict(words)
-                #print (preds)
-                preds=check_IOB(preds)
-                #print (preds,"===")
-            for (w, p) in zip(words, preds):
-                outfile.write(w+"\t"+p+"\n")
-            outfile.write("\n")
-        if i < len(abs)-1:
-            outfile.write("END\tO\n\n")
+def get_predict(abstract_text,model, tokenizer,pmid=True):
+    if pmid==True:
+        pmid_text,abstract_text = re.split("\|\|",abstract_text)
+    sents = tokenizer.sent_tokenize(abstract_text, mask = True) #mask = True protects contents in [] () not to be splited. can set mask = False to turn off this function
+    out_text = []
+    out_preds= []
+    for sent in sents:
+        words = sent.split()
+        out_text.append(words)
+        preds=model.predict(words)
+        out_preds.append(preds)
+    if pmid == True:
+        return out_text, out_preds,pmid_text
+    else:
+        return out_text, out_preds
 
