@@ -31,20 +31,20 @@
   "pmid": "11264545",
   "sentences": {
     "sent_1": {
-      "Section": "",
-      "text": "METHODS AND RESULTS : To determine the relative power of radiographic     heart measurements for predicting outcome in dilated cardiomyopathy , we retrospectively studied 88 adult patients with chest radiographs     obtained within 35 days of echocardiography .",
+      "Section": "METHODS",
+      "text": "METHODS AND RESULTS : To determine the relative power of radiographic heart measurements for predicting outcome in dilated cardiomyopathy , we retrospectively studied 88 adult patients with chest radiographs obtained within 35 days of echocardiography .",
       "entities": {
         "entity_1": {
           "text": "radiographic heart measurements",
           "class": "Outcome",
-          "n    egation": 0,
+          "negation": 0,
           "UMLS": "C0018787:heart,C1306645:radiograph,",
           "index": 1,
           "start": 10
         },
         "entity_2": {
           "text": "predicting outcome",
-          "class": "    Outcome",
+          "class": "Outcome",
           "negation": 0,
           "UMLS": "",
           "index": 2,
@@ -78,14 +78,14 @@
       "relations": {}
     },
     "sent_2": {
-      "Section    ": "",
+      "Section": "METHODS",
       "text": "Standard radiographic variables were measured for each patient , and the cardiothoracic ( CT ) ratio , frontal cardiac area     , and volume were calculated .",
       "entities": {
         "entity_6": {
           "text": "Standard radiographic variables",
           "class": "Outcome",
           "negation": 0,
-          "    UMLS": "C0038137:Standard,C1306645:radiograph,",
+          "UMLS": "C0038137:Standard,C1306645:radiograph,",
           "index": 1,
           "start": 0
         },
