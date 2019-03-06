@@ -23,9 +23,9 @@
 3. TO BE CONTINUED    
 
 ## Exmample  
-**JSON**
-**Input** `example.txt` contain over 70+ abstracts with methods sections
-**Parsing results**  folder `example_json_out`
+**JSON**  
+**Input** `example.txt` contain over 70+ abstracts with methods sections  
+**Parsing results**  folder `example_json_out`  
 ```json
 {
   "pmid": "11264545",
