@@ -4,6 +4,10 @@
 
 * Author: Tian Kang (tk2624@cumc.columbia.edu)  
 * Affiliation: Department of Biomedical Informatics, Columbia Univerisity ([Dr. Chunhua Weng](http://people.dbmi.columbia.edu/~chw7007/)'s lab)  
+ 
+#### **UPDATE March 6th, 2019: json formatted output is available now**   
+* ongoing: simplification of entities; relations;  
+
 
 ## Usage  
 
@@ -18,9 +22,106 @@
 2. Extract 3 files and put them under cluster/model  
 3. TO BE CONTINUED    
 
-
 ## Exmample  
+**JSON**
+**Input** `example.txt` contain over 70+ abstracts with methods sections
+**Parsing results**  folder `example_json_out`
+```json
+{
+  "pmid": "11264545",
+  "sentences": {
+    "sent_1": {
+      "Section": "",
+      "text": "METHODS AND RESULTS : To determine the relative power of radiographic     heart measurements for predicting outcome in dilated cardiomyopathy , we retrospectively studied 88 adult patients with chest radiographs     obtained within 35 days of echocardiography .",
+      "entities": {
+        "entity_1": {
+          "text": "radiographic heart measurements",
+          "class": "Outcome",
+          "n    egation": 0,
+          "UMLS": "C0018787:heart,C1306645:radiograph,",
+          "index": 1,
+          "start": 10
+        },
+        "entity_2": {
+          "text": "predicting outcome",
+          "class": "    Outcome",
+          "negation": 0,
+          "UMLS": "",
+          "index": 2,
+          "start": 14
+        },
+        "entity_3": {
+          "text": "dilated cardiomyopathy",
+          "class": "Participant",
+          "nega    tion": 0,
+          "UMLS": "C0007193:dilated cardiomyopathy,",
+          "index": 3,
+          "start": 17
+        },
+        "entity_4": {
+          "text": "chest radiographs",
+          "class": "Participant",
+          "negation": 0,
+          "UMLS": "C1306645:radiographs,C0817096:chest,",
+          "index": 4,
+          "start": 27
+        },
+        "entity_5": {
+          "text": "echocardiography",
+          "c    lass": "Participant",
+          "negation": 0,
+          "UMLS": "C0013516:echocardiography,",
+          "index": 5,
+          "start": 34
+        }
+      },
+      "relations": {}
+    },
+    "sent_2": {
+      "Section    ": "",
+      "text": "Standard radiographic variables were measured for each patient , and the cardiothoracic ( CT ) ratio , frontal cardiac area     , and volume were calculated .",
+      "entities": {
+        "entity_6": {
+          "text": "Standard radiographic variables",
+          "class": "Outcome",
+          "negation": 0,
+          "    UMLS": "C0038137:Standard,C1306645:radiograph,",
+          "index": 1,
+          "start": 0
+        },
+        "entity_7": {
+          "text": "cardiothoracic ( CT ) ratio",
+          "class": "Outcome",
+          "negation": 0,
+          "UMLS": "",
+          "index": 2,
+          "start": 11
+        },
+        "entity_8": {
+          "text": "frontal cardiac area",
+          "class": "Outcome",
+          "negation": 0,
+          "UMLS": "C0018787:cardiac,",
+          "index": 3,
+          "start": 17
+        },
+        "entity_9": {
+          "text": "volume",
+          "class": "Outcome",
+          "negation": 0,
+          "UMLS": "",
+          "inde    x": 4,
+          "start": 22
+        }
+      },
+      "relations": {}
+    }
+  }
+}
 
+```
+
+**XML**
 **Input**  `test.txt`  
 **Parsing results** `temp.xml`  
 
