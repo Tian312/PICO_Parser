@@ -74,7 +74,6 @@ def generate_json(out_text, out_preds,matcher,pmid="",sent_tags=[],entity_tags=[
         results["sentences"][sent_header]={"Section":"","text":" ".join(sent),"entities":{},"relations":{}}
         
         indices_B = [i for i, x in enumerate(pred) if x.split("-")[0] == "B"]
-        term_index = 1
         
         for ind in indices_B:   
             
@@ -97,7 +96,7 @@ def generate_json(out_text, out_preds,matcher,pmid="",sent_tags=[],entity_tags=[
                 entity_header = "attribute_"+str(attribute_id)
             start = ind
             inds=[]
-            while(pred[start] !="O" or start > len(pred)):
+            while(start < len(pred) and pred[start] !="O"):
                 inds.append(start)
                 start+=1
             c = [ sent[i] for i in inds]
@@ -117,8 +116,8 @@ def generate_json(out_text, out_preds,matcher,pmid="",sent_tags=[],entity_tags=[
             #===============UMLS EDN =====================
             
             
-            results["sentences"][sent_header]["entities"][entity_header]={"text":term_text,"class":entity_class,"negation":neg, "UMLS":umls_tag,"index":term_index,"start":ind }
-            term_index +=1
+            results["sentences"][sent_header]["entities"][entity_header]={"text":term_text,"class":entity_class,"negation":neg, "UMLS":umls_tag,"start":ind }
+
      
         #=============Relations ======================
         '''
