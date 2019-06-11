@@ -4,6 +4,8 @@
 
 * Author: Tian Kang (tk2624@cumc.columbia.edu)  
 * Affiliation: Department of Biomedical Informatics, Columbia Univerisity ([Dr. Chunhua Weng](http://people.dbmi.columbia.edu/~chw7007/)'s lab)  
+* Citation: "Kang T, Zhou S, Weng C, _**Pretraining to Recognize PICO elements from Randomized Controlled Trial Literature**_, Proceedings of Medical Informatics Congress (MedInfo), 2019, in press."    
+ 
  
 #### **UPDATE March 6th, 2019: json formatted output is available now**   
 * ongoing: simplification of entities; relations;  
