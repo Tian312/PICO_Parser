@@ -21,8 +21,8 @@
 
 ## Exmample  
 
-**Input** [`test/txt`]https://github.com/Tian312/PICO_Parser/tree/master/BERT_Parser/test/txt)  
-**Parsing results**  [`test/json`]https://github.com/Tian312/PICO_Parser/tree/master/BERT_Parser/test/json)
+**Input** [`test/txt`](https://github.com/Tian312/PICO_Parser/tree/master/BERT_Parser/test/txt)  
+**Parsing results** [`test/json`](https://github.com/Tian312/PICO_Parser/tree/master/BERT_Parser/test/json) 
 
    
    
