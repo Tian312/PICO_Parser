@@ -1,0 +1,142 @@
+<?xml version="1.0"?><root>
+	<abstract>
+		<sent>
+			<text>A double-blind crossover comparison of pindolol , metoprolol , atenolol and labetalol in mild to moderate hypertension .</text>
+			<entity class='Intervention' UMLS='C0031937:pindolol' index='T1' start='5'> pindolol </entity>
+			 <entity class='Intervention' UMLS='C0025859:metoprolol' index='T2' start='7'> metoprolol </entity>
+			 <entity class='Intervention' UMLS='C0004147:atenolol' index='T3' start='9'> atenolol </entity>
+			 <entity class='Intervention' UMLS='C0022860:labetalol' index='T4' start='11'> labetalol </entity>
+			 <entity class='Participant' UMLS='' index='T5' start='13'> mild </entity>
+			 <entity class='Participant' UMLS='C0020538:hypertension' index='T6' start='15'> moderate hypertension </entity>
+		</sent>
+		<sent>
+			<text>1 This study was designed to compare in a double-blind randomized crossover trial , atenolol , labetalol , metoprolol and pindolol .</text>
+			<entity class='Intervention' UMLS='C0004147:atenolol' index='T7' start='14'> atenolol </entity>
+			 <entity class='Intervention' UMLS='C0022860:labetalol' index='T8' start='16'> labetalol </entity>
+			 <entity class='Intervention' UMLS='C0025859:metoprolol' index='T9' start='18'> metoprolol </entity>
+			 <entity class='Intervention' UMLS='C0031937:pindolol' index='T10' start='20'> pindolol </entity>
+		</sent>
+		<sent>
+			<text>Considerable differences in dose ( atenolol 138 +/- 13 mg daily ; labetalol 308 +/- 34 mg daily ; metoprolol 234 +/- 22 mg daily ; and pindolol 24 +/-2 mg daily were required to produce similar antihypertensive effects .</text>
+			<attribute class='modifier' index='T11' start='1'> differences </attribute>
+			 <entity class='Outcome' UMLS='' index='T12' start='3'> dose </entity>
+			 <entity class='Intervention' UMLS='C0004147:atenolol' index='T13' start='5'> atenolol </entity>
+			 <attribute class='measure' index='T14' start='6'> 138 +/- 13 mg daily </attribute>
+			 <entity class='Intervention' UMLS='C0022860:labetalol' index='T15' start='12'> labetalol </entity>
+			 <attribute class='measure' index='T16' start='13'> 308 +/- 34 mg daily </attribute>
+			 <entity class='Intervention' UMLS='C0025859:metoprolol' index='T17' start='19'> metoprolol </entity>
+			 <attribute class='measure' index='T18' start='20'> 234 +/- 22 mg </attribute>
+			 <entity class='Intervention' UMLS='C0031937:pindolol' index='T19' start='27'> pindolol </entity>
+			 <attribute class='measure' index='T20' start='28'> 24 +/-2 mg daily </attribute>
+			 <entity class='Outcome' UMLS='C0003364:antihypertensive' index='T21' start='37'> antihypertensive effects </entity>
+		</sent>
+		<sent>
+			<text>3 The overall incidence of side-effects was similar with atenolol , metoprolol and pindolol but was slightly less with labetalol .</text>
+			<entity class='Outcome' UMLS='' index='T22' start='2'> overall incidence of side-effects </entity>
+			 <attribute class='modifier' index='T23' start='7'> similar </attribute>
+			 <entity class='Intervention' UMLS='C0004147:atenolol' index='T24' start='9'> atenolol </entity>
+			 <entity class='Intervention' UMLS='C0025859:metoprolol' index='T25' start='11'> metoprolol </entity>
+			 <entity class='Intervention' UMLS='C0031937:pindolol' index='T26' start='13'> pindolol </entity>
+			 <attribute class='modifier' index='T27' start='17'> less </attribute>
+			 <entity class='Intervention' UMLS='C0022860:labetalol' index='T28' start='19'> labetalol </entity>
+		</sent>
+		<sent>
+			<text>Sleep disturbances and abnormal dreaming patterns were most frequent with pindolol .</text>
+			<entity class='Outcome' UMLS='C0037317:Sleep disturbances' index='T29' start='0'> Sleep disturbances </entity>
+			 <entity class='Outcome' UMLS='C0205161:abnormal,C0013117:dreaming' index='T30' start='3'> abnormal dreaming patterns </entity>
+			 <attribute class='modifier' index='T31' start='8'> frequent </attribute>
+			 <entity class='Intervention' UMLS='C0031937:pindolol' index='T32' start='10'> pindolol </entity>
+		</sent>
+		<sent>
+			<text>4 There was a significantly greater fall in pulse rate during atenolol and metoprolol treatment periods .</text>
+			<attribute class='modifier' index='T33' start='5'> greater </attribute>
+			 <entity class='Outcome' UMLS='C0232117:pulse rate,C0085639:fall' index='T34' start='6'> fall in pulse rate </entity>
+			 <entity class='Intervention' UMLS='C0004147:atenolol' index='T35' start='11'> atenolol </entity>
+			 <entity class='Intervention' UMLS='C0025859:metoprolol' index='T36' start='13'> metoprolol </entity>
+		</sent>
+	</abstract>
+
+	<abstract>
+		<sent>
+			<text>Pre-operative short-term pulmonary rehabilitation for patients of chronic obstructive pulmonary disease undergoing coronary artery bypass graft surgery .</text>
+			<entity class='Intervention' UMLS='C0199529:pulmonary rehabilitation' index='T37' start='0'> Pre-operative short-term pulmonary rehabilitation </entity>
+			 <entity class='Participant' UMLS='C0024117:chronic obstructive pulmonary disease' index='T38' start='7'> chronic obstructive pulmonary disease </entity>
+			 <entity class='Participant' UMLS='C0010055:coronary artery bypass graft,C0543467:surgery' index='T39' start='12'> coronary artery bypass graft surgery </entity>
+		</sent>
+		<sent>
+			<text>The role of pre-operative short-term pulmonary rehabilitation in patients with chronic obstructive pulmonary disease who undergo coronary artery bypass graft surgery has been assessed for the first time prospectively .</text>
+			<entity class='Intervention' UMLS='C0199529:pulmonary rehabilitation' index='T40' start='3'> pre-operative short-term pulmonary rehabilitation </entity>
+			 <entity class='Participant' UMLS='C0024117:chronic obstructive pulmonary disease' index='T41' start='10'> chronic obstructive pulmonary disease </entity>
+			 <entity class='Participant' UMLS='C0010055:coronary artery bypass graft,C0543467:surgery' index='T42' start='16'> coronary artery bypass graft surgery </entity>
+		</sent>
+		<sent>
+			<text>Forty-five patients posted for coronary artery bypass graft surgery were randomised to receive either short-term pulmonary rehabilitation ( group I ) or no such programme ( group II ) .</text>
+			<entity class='Participant' UMLS='C0010055:coronary artery bypass graft,C0543467:surgery' index='T43' start='4'> coronary artery bypass graft surgery </entity>
+			 <entity class='Intervention' UMLS='C0199529:pulmonary rehabilitation' index='T44' start='14'> short-term pulmonary rehabilitation </entity>
+			 <entity class='Intervention' UMLS='' index='T45' start='22'> no such programme </entity>
+		</sent>
+		<sent>
+			<text>Patients of both the groups were evenly matched with respect to age , sex , body surface area , duration and severity of chronic obstructive pulmonary disease and coronary artery disease .</text>
+			
+		</sent>
+		<sent>
+			<text>Normal individuals who evenly matched with the study group were assessed for normal respiratory function parameters .</text>
+			
+		</sent>
+		<sent>
+			<text>Pre-operative and post-operative peak expiratory flow rate , inspiratory capacity , post-operative ventilation time , post-operative pulmonary complication and hospital stay were determined in both the groups .</text>
+			<entity class='Outcome' UMLS='C0030735:peak expiratory flow rate' index='T46' start='0'> Pre-operative and post-operative peak expiratory flow rate </entity>
+			 <entity class='Outcome' UMLS='C0021610:inspiratory capacity' index='T47' start='8'> inspiratory capacity </entity>
+			 <entity class='Outcome' UMLS='C0035203:ventilation' index='T48' start='11'> post-operative ventilation time </entity>
+			 <entity class='Outcome' UMLS='C0281169:pulmonary complication' index='T49' start='15'> post-operative pulmonary complication </entity>
+			 <entity class='Outcome' UMLS='' index='T50' start='19'> hospital stay </entity>
+		</sent>
+		<sent>
+			<text>Peak expiratory flow rate ( 220.0 +/- 12.9 and 324.3 +/- 84.3 in group I , 218.0 +/- 16.4 and 260.5 +/- 35.2 in group II ) and inspiratory capacity ( 844.0 +/- 147.4 and 1100.0 +/- 158.1 in group I , 830.0 +/- 117.4 and 1090 +/- 137 in group II ) were significantly lower before and after surgery respectively in both groups compared to normal values .</text>
+			<entity class='Outcome' UMLS='C0030735:Peak expiratory flow rate' index='T51' start='0'> Peak expiratory flow rate </entity>
+			 <attribute class='measure' index='T52' start='5'> 220.0 +/- 12.9 and 324.3 +/- 84.3 </attribute>
+			 <attribute class='measure' index='T53' start='16'> 218.0 +/- 16.4 and 260.5 +/- 35.2 </attribute>
+			 <entity class='Outcome' UMLS='C0021610:inspiratory capacity' index='T54' start='28'> inspiratory capacity </entity>
+			 <attribute class='measure' index='T55' start='31'> 844.0 +/- 147.4 </attribute>
+			 <attribute class='measure' index='T56' start='35'> 1100.0 +/- 158.1 </attribute>
+			 <attribute class='measure' index='T57' start='42'> 830.0 +/- 117.4 </attribute>
+			 <attribute class='measure' index='T58' start='46'> 1090 +/- 137 </attribute>
+			 <attribute class='modifier' index='T59' start='55'> lower </attribute>
+			 <entity class='Intervention' UMLS='C0543467:surgery' index='T60' start='59'> surgery </entity>
+			 <entity class='Intervention' UMLS='C1553386:normal' index='T61' start='66'> normal values </entity>
+		</sent>
+		<sent>
+			<text>Even though both groups showed a significant rise in post-operative peak expiratory flow rate and inspiratory capacity after surgery , the post-operative peak expiratory flow rate and inspiratory capacity in group I was significantly higher than in group II .</text>
+			<attribute class='modifier' index='T62' start='7'> rise </attribute>
+			 <entity class='Outcome' UMLS='C0030735:peak expiratory flow rate' index='T63' start='9'> post-operative peak expiratory flow rate </entity>
+			 <entity class='Outcome' UMLS='C0021610:inspiratory capacity' index='T64' start='15'> inspiratory capacity </entity>
+			 <entity class='Participant' UMLS='C0543467:surgery' index='T65' start='18'> surgery </entity>
+			 <entity class='Outcome' UMLS='C0030735:peak expiratory flow rate' index='T66' start='21'> post-operative peak expiratory flow rate </entity>
+			 <entity class='Outcome' UMLS='C0021610:inspiratory capacity' index='T67' start='27'> inspiratory capacity </entity>
+			 <attribute class='modifier' index='T68' start='34'> higher </attribute>
+		</sent>
+		<sent>
+			<text>In group I , the post-operative ventilation time ( 24.5 +/- 6.00 hours ) , post-operative complications ( n = 4 ) and hospital stay ( 12.4 +/- 3.6 days ) were significantly lower than in group II ( 35.2 +/- 22.3 hours , n = 11 , 18.8 +/- 6.6 days respectively ) .</text>
+			<entity class='Outcome' UMLS='C0035203:ventilation' index='T69' start='5'> post-operative ventilation time </entity>
+			 <attribute class='measure' index='T70' start='9'> 24.5 +/- 6.00 hours </attribute>
+			 <entity class='Outcome' UMLS='C0009566:complications' index='T71' start='15'> post-operative complications </entity>
+			 <entity class='Outcome' UMLS='' index='T72' start='23'> hospital stay </entity>
+			 <attribute class='measure' index='T73' start='26'> 12.4 +/- 3.6 days </attribute>
+			 <attribute class='modifier' index='T74' start='33'> lower </attribute>
+			 <attribute class='measure' index='T75' start='39'> 35.2 +/- 22.3 hours </attribute>
+			 <attribute class='measure' index='T76' start='48'> 18.8 +/- 6.6 days </attribute>
+		</sent>
+		<sent>
+			<text>These data suggest that short-term pulmonary rehabilitation is feasible and effective in improving pulmonary functions before and after surgery and in reducing surgical morbidity and cost of medical care significantly .</text>
+			<entity class='Intervention' UMLS='C0199529:pulmonary rehabilitation' index='T77' start='4'> short-term pulmonary rehabilitation </entity>
+			 <attribute class='modifier' index='T78' start='8'> feasible </attribute>
+			 <attribute class='modifier' index='T79' start='10'> effective </attribute>
+			 <attribute class='modifier' index='T80' start='12'> improving </attribute>
+			 <entity class='Outcome' UMLS='C0024109:pulmonary,C0031843:function' index='T81' start='13'> pulmonary functions </entity>
+			 <entity class='Participant' UMLS='C0543467:surgery' index='T82' start='18'> surgery </entity>
+			 <attribute class='modifier' index='T83' start='21'> reducing </attribute>
+			 <entity class='Outcome' UMLS='C0220880:morbidity' index='T84' start='22'> surgical morbidity </entity>
+			 <entity class='Outcome' UMLS='C0496675:medical care' index='T85' start='25'> cost of medical care </entity>
+		</sent>
+	</abstract>
+</root>
