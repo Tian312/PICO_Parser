@@ -6,18 +6,33 @@
 * Affiliation: Department of Biomedical Informatics, Columbia Univerisity ([Dr. Chunhua Weng](http://people.dbmi.columbia.edu/~chw7007/)'s lab)  
 * Citation: "Kang T, Zhou S, Weng C, _**Pretraining to Recognize PICO elements from Randomized Controlled Trial Literature**_, Proceedings of Medical Informatics Congress (MedInfo), 2019, in press."    
  
- 
-#### **UPDATE March 6th, 2019: json formatted output is available now**   
-* ongoing: simplification of entities; relations;  
+#### **UPDATE April, 2020: upload parser pretrained on BERT **
+##### PICO Parser trained on BlueBERT is now available. Please refer to the usage below.    
 
 
 ## Usage  
 
-#### PICO Element with attributes in XML   
+## !!! NEW: BERT Parser:
+1. Install `requirements.txt`
+2.  If you want to use UMLS to standardize entities, please install ['UMLS'](https://www.nlm.nih.gov/research/umls/licensedcontent/umlsknowledgesources.html) and ['QuickUMLS'](https://github.com/Georgetown-IR-Lab/QuickUMLS) locally  
+3. Download blueBERT and trained PICO parser models (please refer to the download instructions for [BERT](BERT_Parser/bluebert_pretrained_ori/README.md) and [PICO](BERT_Parser/bert_init_models/README.md) respectively)  
+3.  Edit `parser_config.py` to customize your own diretories and BERT configuration  
+4. Run `python bluebert/run_bluebert_ner_predict.py.py --data_dir= --output_dir= ` to start parsing (Specify your input in --data_dir and output directory in -- output_dir. In the input directory, each abstract text is put in one text file with its pmid as the file name. Example data is provided in [`test`](PICO_Parser/BERT_Parser/test) folder. to run examples, `python Phase1_NER_predict.py --data_dir=test/txt --output_dir=test/json`
+
+## Exmample  
+
+**Input** [`test/txt`](PICO_Parser/BERT_Parser/test/txt)  
+**Parsing results**  [`test/json`](PICO_Parser/BERT_Parser/test/json)
+
+   
+   
+### Original: LSTM Parser:
+#### PICO Element with attributes in JSON/XML   
 1.  Install `requirements.txt`
 2.  If you want to use UMLS to standardize entities, please install ['UMLS'](https://www.nlm.nih.gov/research/umls/licensedcontent/umlsknowledgesources.html) and ['QuickUMLS'](https://github.com/Georgetown-IR-Lab/QuickUMLS) locally  
 3.  Edit `parser_config.py` to customize your own diretories and installation  
 4.  Run `python Phase1_NER_predict.py` to start parsing  
+
 
 #### Clustering parsed PICO elements to represent study design    
 1. Download context vector pretrained in all pubmed abstracts from 1990-2019 (downlaod link in [cluster/model/download.txt](https://github.com/Tian312/PICO_Parser/blob/master/cluster/model/download.txt))   
