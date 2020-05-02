@@ -1,0 +1,1 @@
+We analyzed age- and sex-specific morbidity and mortality data from SARS-COV-2 pandemic in China and Republic of Korea (ROK). Data from China exhibit a Gaussian distribution with peak morbidity in the 50-59 years cohort, while the ROK data have a bimodal distribution with highest morbidity in the 20-29 years cohort.

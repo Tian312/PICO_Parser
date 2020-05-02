@@ -1,0 +1,4 @@
+2020-05-02 12:45:17,981:INFO: Scale of 0 disables regularizer.
+2020-05-02 12:45:26,835:INFO: Initializing tf session
+2020-05-02 12:45:38,835:INFO: Reloading the latest trained model...
+2020-05-02 12:45:38,838:INFO: Restoring parameters from study_arms/model.weights
