@@ -1,7 +1,7 @@
 
 PREPARE
 ./study_arm is the folder that stores the models for prediction
-download the model from google drive link
+download the model from google drive link https://drive.google.com/open?id=1WJO5O6czg1p5oNeU9LsUmhf1cU_O78ly
 decompress the file by tar -xf study_arm.tar.gz
 put all files under folder ./study_arm
 
