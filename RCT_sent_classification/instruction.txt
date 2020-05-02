@@ -1,0 +1,11 @@
+
+PREPARE
+./study_arm is the folder that stores the models for prediction
+download the model from google drive link
+decompress the file by tar -xf study_arm.tar.gz
+put all files under folder ./study_arm
+
+PREDICT
+modify the predict.py main function to set your own input and output file
+defaults are test.txt for testing purpose 
+run "python3 predict.py" for testing examples
