@@ -4,3 +4,4 @@ nltk>=3.3
 tensorflow>=1.0
 nlpcube
 rusenttokenize
+bert
