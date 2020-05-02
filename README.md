@@ -5,7 +5,8 @@
 * Author: Tian Kang (tk2624@cumc.columbia.edu)  
 * Affiliation: Department of Biomedical Informatics, Columbia Univerisity ([Dr. Chunhua Weng](http://people.dbmi.columbia.edu/~chw7007/)'s lab)  
 * Citation: "Kang T, Zhou S, Weng C, _**Pretraining to Recognize PICO elements from Randomized Controlled Trial Literature**_, Proceedings of Medical Informatics Congress (MedInfo), 2019, in press."    
- 
+
+#### **UPDATE May, 2020: Sentence classification for the abstracts available **
 #### **UPDATE April, 2020: upload parser pretrained on BERT **
 ##### PICO Parser trained on BlueBERT is now available. Please refer to the usage below.    
 
