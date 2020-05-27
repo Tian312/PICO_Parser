@@ -1,6 +1,8 @@
 import os
 import tensorflow as tf
-
+'''
+modified from https://github.com/jind11/HSLN-Joint-Sentence-Classification
+'''
 
 class BaseModel(object):
     """Generic class for general methods that are not specific to NER"""
