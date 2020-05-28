@@ -2,8 +2,11 @@
 
 import os, re,  string
 import sys,codecs
-from umls_tagging import get_umls_tagging
+from text_processing.umls_tagging import get_umls_tagging
 import json
+
+import warnings
+warnings.filterwarnings("ignore")
 
 def generate_XML(NERxml_dir,matcher,use_UMLS = 0,crfresult_dir="temp.conll"):
     crfresult_input = codecs.open(crfresult_dir,'r')
@@ -69,6 +72,7 @@ def generate_json(out_text, out_preds,matcher,pmid="",sent_tags=[],entity_tags=[
     attribute_id=0
     
     for sent, pred in zip(out_text, out_preds):
+                
         sent_id+= 1
         sent_header = "sent_"+str(sent_id)
         results["sentences"][sent_header]={"Section":"METHODS","text":" ".join(sent),"entities":{},"relations":{}}

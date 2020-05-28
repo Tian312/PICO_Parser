@@ -10,12 +10,12 @@ class Config():
 
     # Base BERT config
     max_seq_length=128 
-    vocab_file="bert_init_models/vocab.txt"  
-    bert_config_file= "bert_init_models/bert_config.json"  
-    init_checkpoint= "bert_init_models/bert_model.ckpt"
+    vocab_file="bluebert_pretrained_ori/vocab.txt"#"bert_init_models/vocab.txt"  
+    bert_config_file= "bluebert_pretrained_ori/bert_config.json"#tbert_init_models/bert_config.json"  
+    init_checkpoint= "bluebert_pretrained_ori/model.ckpt-12300" #"bert_init_models/bert_model.ckpt"
      
     # NCBI blueBERT config
-    bluebert_dir = "bluebert_pretrained"
+    bluebert_dir = "bluebert_pretrained_ori"
     
     # UMLS config
     use_UMLS = 0 # 0 represents not using UMLS

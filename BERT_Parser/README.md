@@ -1,1 +1,1 @@
-Please download base BERT and NCBI bluebert models and put under bert_init_models/ and bluebert_dir
+Please download pretrained bluebert model for PICO element recognition and unzip it into bluebert_pretrained_ori/
