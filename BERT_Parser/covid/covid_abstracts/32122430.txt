@@ -1,0 +1,1 @@
+We are proposing to use machine learning algorithms to be able to improve possible case identifications of COVID-19 more quicker when we use a mobile phone-based web survey. This will also reduce the spread in the susceptible populations.

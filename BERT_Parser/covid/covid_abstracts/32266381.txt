@@ -1,0 +1,1 @@
+We report the observation that 14.5% of COVID-19 patients had positive RT-PCR testing again after discharge. We describe correlations between laboratory parameters and treatment duration (r= -0.637; p=0.002) and time to virus recrudescence (r= 0.52; p=0.008) respectively, suggesting the need for additional measures to confirm illness resolution in COVID-19 patients.

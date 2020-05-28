@@ -1,0 +1,1 @@
+The nucleotide analogue remdesivir is an investigational drug for the treatment of human coronavirus infection. Remdesivir is a phosphoramidate prodrug and is known to target viral RNA-dependent RNA polymerases. In this issue, Gordon et al. identify that remdesivir acts as a delayed RNA chain terminator for MERS-CoV polymerase complexes.
