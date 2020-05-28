@@ -1,40 +1,45 @@
 # PICO_Parser
 
-**Parse PubMed abstracts following PICO framework to standarize PICO elements.**  
+**Parse RCT PubMed abstracts following PICO framework to standarize PICO elements.**  
 
 * Author: Tian Kang (tk2624@cumc.columbia.edu)  
 * Affiliation: Department of Biomedical Informatics, Columbia Univerisity ([Dr. Chunhua Weng](http://people.dbmi.columbia.edu/~chw7007/)'s lab)  
-* Citation: "Kang T, Zhou S, Weng C, _**Pretraining to Recognize PICO elements from Randomized Controlled Trial Literature**_, Proceedings of Medical Informatics Congress (MedInfo), 2019, in press."    
+* Citation: ["Kang, T., Zou, S. and Weng, C., 2019. _**Pretraining to Recognize PICO Elements from Randomized Controlled Trial Literature. Studies in health technology and informatics**_, 264, p.188."](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6852618/)  
 
 #### UPDATE May, 2020:   
-### 1. Solved the issues with *BERT-based parser*.  
-### 2. Pretrained *Sentence classification model for RCT abstracts* available.  
+##### 1. Solved the issues with *BERT-based parser*.  
+##### 2. Pretrained *Sentence classification model for RCT abstracts* available.  
 
-  *TO-DO:  
-  Will have more modules updated soon for representing more comprehensive medical evidence information from RCT abstracts.  
+#### _Major updates coming soon:_  
+Will have more modules updated soon for representing more comprehensive medical evidence information from RCT abstracts.
   
 
 
-
+---
 
 ## Usage  
 
-## !!! NEW: BlueBERT-based Parser (bugs solved, May 2020):  
+##  NEW: BlueBERT-based Parser (bugs solved, May 2020):  
 Adapted from [BlueBERT](https://github.com/ncbi-nlp/bluebert) from NCBI-NLP 
 1. Install `requirements.txt`
 2.  If you want to use UMLS to standardize entities, please install ['UMLS'](https://www.nlm.nih.gov/research/umls/licensedcontent/umlsknowledgesources.html) and ['QuickUMLS'](https://github.com/Georgetown-IR-Lab/QuickUMLS) locally  
-3. Download pretrained bluebert for PICO element recognition models (please refer to the download instructions for [BERT](BERT_Parser/bluebert_pretrained_ori/README.md) )  
-3.  Edit `parser_config.py` to customize your own diretories and BERT configuration  
-4. Run `python run_bluebert_ner_predict.py --data_dir= --output_dir= ` to start parsing (Specify your input in --data_dir and output directory in -- output_dir. In the input directory, each abstract text is put in one text file with its pmid as the file name. Example data is provided in [`test`](https://github.com/Tian312/PICO_Parser/tree/master/BERT_Parser/test) folder.  
+3. Download pretrained bluebert for PICO element recognition models (link in [BERT](BERT_Parser/bluebert_pretrained_ori/README.md) )  
+3. Edit `parser_config.py` to customize your own diretories and BERT configuration  
+4. Run to start parsing (specify your input in --data_dir and output directory in -- output_dir. In the input directory, each abstract text is put in one text file with its pmid as the file name. Example data is provided in [`test`](https://github.com/Tian312/PICO_Parser/tree/master/BERT_Parser/test) folder.       
+
+		python run_bluebert_ner_predict.py --data_dir= --output_dir=
+
 To run examples:  
-`python bluebert/run_bluebert_ner_predict.py.py --data_dir=test/txt --output_dir=test/json`  
+
+	python run_bluebert_ner_predict.py --data_dir=test/txt --output_dir=test/json`  
 
 ## Exmample  
 
 **Input** [`test/txt`](https://github.com/Tian312/PICO_Parser/tree/master/BERT_Parser/test/txt)  
 **Parsing results** [`test/json`](https://github.com/Tian312/PICO_Parser/tree/master/BERT_Parser/test/json) 
 
-   
+
+---
    
 ### Original: LSTM Parser:
 #### PICO Element with attributes in JSON/XML   
