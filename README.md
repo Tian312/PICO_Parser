@@ -14,12 +14,11 @@
 Will have more modules updated soon for representing more comprehensive medical evidence information from RCT abstracts.
   
 
-
 ---
 
-## Usage  
+## User Guide 
 
-##  NEW: BlueBERT-based Parser (bugs solved, May 2020):  
+###  NEW: BlueBERT-based Parser (bugs solved, May 2020):  
 Adapted from [BlueBERT](https://github.com/ncbi-nlp/bluebert) from NCBI-NLP 
 1. Install `requirements.txt`
 2.  If you want to use UMLS to standardize entities, please install ['UMLS'](https://www.nlm.nih.gov/research/umls/licensedcontent/umlsknowledgesources.html) and ['QuickUMLS'](https://github.com/Georgetown-IR-Lab/QuickUMLS) locally  
