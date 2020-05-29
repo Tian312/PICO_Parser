@@ -19,7 +19,7 @@ Will have more modules updated soon for representing more comprehensive medical 
 ## User Guide 
 
 ###  NEW: BlueBERT-based Parser (bugs solved, May 2020):  
-Adapted from [BlueBERT](https://github.com/ncbi-nlp/bluebert) from NCBI-NLP 
+Adapted from [NCBI-NLP BlueBERT](https://github.com/ncbi-nlp/bluebert) 
 1. Install `requirements.txt`
 2.  If you want to use UMLS to standardize entities, please install ['UMLS'](https://www.nlm.nih.gov/research/umls/licensedcontent/umlsknowledgesources.html) and ['QuickUMLS'](https://github.com/Georgetown-IR-Lab/QuickUMLS) locally  
 3. Download pretrained bluebert for PICO element recognition models (link in [BERT](BERT_Parser/bluebert_pretrained_ori/README.md) )  
