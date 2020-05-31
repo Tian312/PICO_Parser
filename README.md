@@ -10,10 +10,9 @@
 ##### 1. Solved the issues with *BERT-based parser*.  
 ##### 2. Pretrained *Sentence classification model for RCT abstracts* available.  
 
-#### _Major updates coming soon:_  
-Will have more modules updated soon for representing more comprehensive medical evidence information from RCT abstracts.
+#### _Major updates coming soon: 
+More modules coming soon for representing medical evidence information comprehensively from RCT abstracts._
   
-
 ---
 
 ## User Guide 
