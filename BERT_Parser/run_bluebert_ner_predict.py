@@ -756,7 +756,6 @@ def main():
     # start reading each file (abstract) and predict
     count = 1
     for f in os.listdir(FLAGS.data_dir):
-        try:
         
             if not f.endswith(".txt"):
                 continue 
@@ -781,9 +780,11 @@ def main():
             #output_predict_file= os.path.join(FLAGS.output_dir,pmid+"_output_predict_file")
             #output_err_file = os.path.join(FLAGS.output_dir,pmid+"_output_err_file")
             #result_to_pair(predict_examples, result, id2label, output_predict_file, output_err_file)
+     
             words, preds = result_to_pair_for_return(predict_examples, result, id2label)
             pmid = re.sub("\.txt","",f)
             outfile_dir= codecs.open(os.path.join(FLAGS.output_dir,pmid+".json"),"w")
+        try: 
             json_out = formalization.generate_json(words, preds,matcher,pmid,sent_tags=[],entity_tags=["Participant","Intervention","Outcome"],attribute_tags=["measure","modifier"],relation_tags=[])
             outfile_dir.write(json_out)
             if count%50 ==0:
